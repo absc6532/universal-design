@@ -2,7 +2,7 @@
 
 body {
     background: yellow;
-    font-family: "Google Sans Code", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 1.2em;
     font-weight: bold;
@@ -11,4 +11,15 @@ body {
 .container{
     margin: 0 auto;
     max-width: 960px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Noto Serif', serif;
+}
+
+header h1 {
+    font-size: 1.8em;
+    font-weight: normal;
 }
