@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tables</title>
+    <style>
+        table, th, td {border-collapse: collapse;}
+        td { 
+        border-collapse: collapse;
+        border: 2px solid red;}
+        td {padding-right: 50px}
+    </style>
 </head>
 <body>
     <header>
         <h1>Accessible Tables</h1>
     </header>
+
     <main>
+
         <section>
-            <h2>Lion Table</h2>
+            <h2>Lion Table</h2> <!-- This table is bad visually and flagged by accessibility -->
             <table>
                 <tr>
                     <td>one</td>
@@ -23,6 +32,32 @@
                 </tr>
             </table>
         </section>
+        <br> <!--break is allowed i think-->
+        <section>
+            <table>
+                <caption>animals that can kill you</caption>
+            <thead>
+                <tr>
+                    <th scope="col">lions</th>
+                    <th scope="col">tigers</th>
+                    <th scope="col">bears</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lion1</td>
+                    <td>tiger1</td>
+                    <td>bear1</td>
+                </tr>
+                <tr>
+                    <td>lion2</td>
+                    <td>tiger2</td>
+                    <td>bear2</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
     </main>
 </body>
 </html>
